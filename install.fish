@@ -137,10 +137,10 @@ if ! pacman -Q $aur_helper &> /dev/null
 end
 
 echo "Installing manual dependencies..."
-yes 1 | $aur_helper -S aur/google-breakpad extra/ddcutil $noconfirm
+yes 1 | $aur_helper -S aur/google-breakpad $noconfirm
+yes 1 | $aur_helper -S aur/ddcutil $noconfirm
 yes 1 | $aur_helper -S aur/autojump $noconfirm
 yes 1 | $aur_helper -S aur/visual-studio-code-insiders-bin $noconfirm
-yes 1 | $aur_helper -S aur/google-breakpad $noconfirm
 yes 1 | $aur_helper -S extra/python-anyio $noconfirm
 
 # Install metapackage for deps
